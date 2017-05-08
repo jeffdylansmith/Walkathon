@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dylan's Donation IIFE</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+</head>
+<body>
+<div class="container">
+<fieldset>
+<div class="input-group">
+	<form>
+		<legend>Submission info</legend>
+		Name:<input type="text" id="donor"><br>
+		Amount:<input type="text" id="amount"><br>
+		Email:<input type="text" id="email"><br>
+		<select id="donationType">
+			<option value="none"></option>
+			<option value="Single">Single</option>
+			<option value="Per-Lap">Per Lap</option>
+		</select>
+	</form>
+	</div>
+</fieldset>
+<div class="table-responsive">
+<table class="table table-striped" id="table">
+  <tr>
+    <th>Name</th>
+    <th>Donation Amount</th> 
+    <th>Single / Per Mile</th>
+  </tr>
+</table>
+</div>
+</div>
+<button id="donate">Donate</button>
+<button type="submit" id="cancel">Cancel</button>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="javascripts/iffe.js"></script>
+<script type="text/javascript" src="javascripts/domhandler.js"></script>
+</body>
+</html>
